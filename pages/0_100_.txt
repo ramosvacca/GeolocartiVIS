@@ -1,0 +1,80 @@
+        <div class="banner_inner_con"> </div>
+
+        <div class="services-breadcrumb">
+          <div class="inner_breadcrumb">
+          <ul class="short">
+            <li><label class="active_work_link"
+                onclick='document.getElementById("subtittle_cestudio").innerHTML
+                = `Reconocimiento automático de relaciones espaciales y
+                patrones geográficos.`'>Presentación</label> <span>|</span></li>
+            <li><label
+                onclick='document.getElementById("subtittle_cestudio").innerHTML
+                = "Introducción"'>Introducción</label><span>|</span></li>
+          </ul>
+          </div>
+        </div>
+        <!--//banner_info-->
+
+          <div class="banner_bottom" id="caso_estudio_content">
+            
+
+
+          </div>
+
+        
+        <!--/caso_estudio_content-->
+
+
+        <div class="news-main">
+            <div class="col-md-4 banner_bottom_left">
+                <div class="banner_bottom_pos">
+                  <div class="banner_bottom_pos_grid">
+                      <div class="col-xs-3 banner_bottom_grid_left">
+                        <div class="banner_bottom_grid_left_grid"> 
+                          <span class="fa fa-laptop" aria-hidden="true"></span>
+                        </div>
+                      </div>
+                    <div class="col-xs-9 banner_bottom_grid_right">
+                    <h4>Digital Solutions</h4>
+                    <p>Lorem Ipsum is simply text the printing and
+                      typesetting standard industry.</p>
+                  </div>
+                  <div class="clearfix"> </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 banner_bottom_left">
+              <div class="banner_bottom_pos">
+                <div class="banner_bottom_pos_grid">
+                  <div class="col-xs-3 banner_bottom_grid_left">
+                    <div class="banner_bottom_grid_left_grid"> <span
+                        class="fa fa-pencil-square-o" aria-hidden="true"></span>
+                    </div>
+                  </div>
+                  <div class="col-xs-9 banner_bottom_grid_right">
+                    <h4>Live Website Builder</h4>
+                    <p>Lorem Ipsum is simply text the printing and
+                      typesetting standard industry.</p>
+                  </div>
+                  <div class="clearfix"> </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 banner_bottom_left">
+              <div class="banner_bottom_pos">
+                <div class="banner_bottom_pos_grid">
+                  <div class="col-xs-3 banner_bottom_grid_left">
+                    <div class="banner_bottom_grid_left_grid"> <span
+                        class="fa fa-newspaper-o" aria-hidden="true"></span>
+                    </div>
+                  </div>
+                  <div class="col-xs-9 banner_bottom_grid_right">
+                    <h4>Creative Strategy</h4>
+                    <p>Lorem Ipsum is simply text the printing and
+                      typesetting standard industry.</p>
+                  </div>
+                  <div class="clearfix"> </div>
+                </div>
+              </div>
+            </div>
+        </div>

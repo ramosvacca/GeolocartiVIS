@@ -66,7 +66,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</ul>
 						-->
 						<ul class="nav navbar-nav">
-							<li class="active" id="index_link"><a href="index.html">Inicio</a></li>
+							<li class="active" id="index_link" onclick="mainpageMaker(true)"><a>Inicio</a></li>
 							<li id="caso_estudio_link" onclick="caso_estudio_link()"><a> Caso de estudio </a></li>
 							<!--
 								<li><a href="about.html">About</a></li>
@@ -91,9 +91,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 
 	<div id="mytruebody">
-		<script>
-		httpGetAsync("https://ramosvacca.github.io/GeolocartiVIS/pages/0_0.txt",
-		setContentREQUEST,"mytruebody");
+	<script>
+		mainpageMaker()
 
 	</script>
 	</div>

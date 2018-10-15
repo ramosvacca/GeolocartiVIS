@@ -13,6 +13,8 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+
+
 body a {
     text-decoration: none;
     transition: 0.5s all;
@@ -2077,3 +2079,14 @@ p.copy-right a:hover {
     }
 }
 /*--//responsive--*/
+
+.active_work_link {
+    font-weight: 1200;
+    color: black;
+    background: darkgray;
+    border-radius: 9px;
+    padding:4px;
+}
+
+#mytruebody {margin-top:90px;
+}

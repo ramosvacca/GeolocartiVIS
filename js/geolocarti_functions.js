@@ -11,8 +11,18 @@
 	}
 };
 
-function pageMaker(input_term) {
+function mainpageMaker() {
+	httpGetAsync("https://ramosvacca.github.io/GeolocartiVIS/pages/0_0.txt",
+		setContentREQUEST,"mytruebody");
 
+	if (arguments[0] == true) {
+		classChanger("caso_estudio_link", "index_link", "active", true);
+		try{
+		window.history.pushState("object or string", "Title", "/GeolocartiVIS/index.html");
+		} catch(err) {
+		console.log('DESARROLLO LOCAL')
+		}
+	}
 
 
 }
