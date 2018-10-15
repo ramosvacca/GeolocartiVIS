@@ -20,8 +20,8 @@ var caso_estudio = ` <!--/banner_info-->
 	            <div class="col-md-6 banner_bottom_grid help"> <img
 	                src="images/redes/colCluster.png" alt="Cluster de
 	                Colombia" class="img-responsive"
-			onmouseover="this.src='geolocarti_web/images/redes/colClusterHOVER.png';this.width='700';this.height='697'"
-			onmouseout="this.src='geolocarti_web/images/redes/colCluster.png';this.width='700';this.height='697'"
+			onmouseover="this.src='visGeolocarti/images/redes/colClusterHOVER.png';this.width='700';this.height='697'"
+			onmouseout="this.src='visGeolocarti/images/redes/colCluster.png';this.width='700';this.height='697'"
 	                id="prefacio_casoestudio" width="700" height="697"><br>
 	              <figcaption>Imagen 1. Mapa de densidad vs Clusters
 	                encontrados</figcaption> </div>
