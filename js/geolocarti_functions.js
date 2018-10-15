@@ -1,13 +1,22 @@
 document.getElementById("caso_estudio_link").onclick = function () {
 
+	window.history.pushState("object or string", "Title", "/GeolocartiVIS/caso_estudio.html");
 	classChanger("index_link", "caso_estudio_link", "active", true);
 	document.getElementById('what_we_do_section').style.display = "none";
 	document.getElementById('extra_explanation_section').style.display = "none";
 	document.getElementById('aboutus_section').style.display = "none";
 	httpGetAsync("https://ramosvacca.github.io/GeolocartiVIS/pages/caso_estudio.txt",
 		setContentREQUEST,"mytruebody");
+	
 
 };
+
+function pageMaker(input_term) {
+
+
+
+}
+
 
 function httpGetAsync(theUrl, callback, additional){
 
@@ -40,6 +49,7 @@ function setContentREQUEST(content, elementId) {
 	console.log(elementId)
 
 	document.getElementById(elementId).innerHTML = content
+
 
 
 }
