@@ -3,7 +3,7 @@
         <div class="services-breadcrumb">
           <div class="inner_breadcrumb">
           <ul class="short">
-            <li><label class="active_work_link"
+            <li><label
                 onclick='document.getElementById("subtittle_cestudio").innerHTML
                 = `Reconocimiento automático de relaciones espaciales y
                 patrones geográficos.`'>Presentación</label> <span>|</span></li>
