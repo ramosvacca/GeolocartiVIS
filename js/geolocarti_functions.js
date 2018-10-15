@@ -1,10 +1,7 @@
-document.getElementById("caso_estudio_link").onclick = function () {
+ function caso_estudio_link() {
 
 	
 	classChanger("index_link", "caso_estudio_link", "active", true);
-	document.getElementById('what_we_do_section').style.display = "none";
-	document.getElementById('extra_explanation_section').style.display = "none";
-	document.getElementById('aboutus_section').style.display = "none";
 	httpGetAsync("https://ramosvacca.github.io/GeolocartiVIS/pages/caso_estudio.txt",
 		setContentREQUEST,"mytruebody");
 	try{
