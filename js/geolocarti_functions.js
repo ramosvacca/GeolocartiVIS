@@ -2,7 +2,7 @@
 
 	
 	classChanger("index_link", "caso_estudio_link", "active", true);
-	httpGetAsync("https://ramosvacca.github.io/GeolocartiVIS/pages/caso_estudio.txt",
+	httpGetAsync("https://ramosvacca.github.io/GeolocartiVIS/pages/0_100_.txt",
 		setContentREQUEST,"mytruebody");
 	try{
 		window.history.pushState("object or string", "Title", "/GeolocartiVIS/caso_estudio.html");
