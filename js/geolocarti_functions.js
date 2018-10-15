@@ -20,8 +20,8 @@ var caso_estudio = ` <!--/banner_info-->
 	            <div class="col-md-6 banner_bottom_grid help"> <img
 	                src="images/redes/colCluster.png" alt="Cluster de
 	                Colombia" class="img-responsive"
-			onmouseover="this.src='visGeolocarti/images/redes/colClusterHOVER.png';this.width='700';this.height='697'"
-			onmouseout="this.src='visGeolocarti/images/redes/colCluster.png';this.width='700';this.height='697'"
+			onmouseover="this.src='images/redes/colClusterHOVER.png';this.width='700';this.height='697'"
+			onmouseout="this.src='images/redes/colCluster.png';this.width='700';this.height='697'"
 	                id="prefacio_casoestudio" width="700" height="697"><br>
 	              <figcaption>Imagen 1. Mapa de densidad vs Clusters
 	                encontrados</figcaption> </div>
@@ -332,6 +332,27 @@ var caso_estudio = ` <!--/banner_info-->
 	    </div>`
 
 var contentDict = {'caso_estudio':caso_estudio}
+
+
+onclick="setContent('mytruebody','caso_estudio')"
+
+
+
+document.getElementById("caso_estudio_link").onclick = function () {classChanger("index_link", "caso_estudio_link", "active", true);
+setContent("mytruebody","caso_estudio");
+
+};
+
+
+
+function classChanger(actual_elem, future_elem, className, single) {
+	if (single) {
+		document.getElementById(actual_elem).classList.remove(className);
+	} else {
+		document.getElementById(actual_elem).className = "";	
+	}
+	document.getElementById(future_elem).classList.add(className);
+}
 
 function setContent(elementId, contentId) {
 	console.log(contentId)
