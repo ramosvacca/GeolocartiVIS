@@ -10,7 +10,7 @@ document.getElementById("caso_estudio_link").onclick = function () {
 	try{
 		window.history.pushState("object or string", "Title", "/GeolocartiVIS/caso_estudio.html");
 	} catch(err) {
-		console.log(err.message)
+		console.log('DESARROLLO LOCAL')
 	}
 };
 
