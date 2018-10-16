@@ -36,10 +36,10 @@ function caso_estudio_(page, htmlFile) {
 		setContentREQUEST,"caso_estudio_content");
 	try{
 		window.history.pushState("object or string", "Title", `/GeolocartiVIS/caso_estudio/${page}/`);
-		} 
-		catch(err) {
+	} 
+	catch(err) {
 		console.log('DESARROLLO LOCAL')
-		}
+	}
 
 
 };
