@@ -63,7 +63,7 @@ function classChanger(actual_elem, future_elem, className, single) {
 }
 
 function setContentREQUEST(content, elementId) {
-	console.log(elementId)
+	console.log(content)
 
 	document.getElementById(elementId).innerHTML = content
 
