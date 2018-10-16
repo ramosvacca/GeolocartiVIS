@@ -2090,3 +2090,7 @@ p.copy-right a:hover {
 
 #mytruebody {margin-top:90px;
 }
+
+.enlace_clase_estudio:hover{
+    background: lightblue;
+}

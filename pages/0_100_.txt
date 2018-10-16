@@ -3,9 +3,9 @@
         <div class="services-breadcrumb">
           <div class="inner_breadcrumb">
           <ul class="short">
-            <li><label id="enlace_presentacion"
+            <li><label id="enlace_presentacion" class="enlace_caso_estudio"
                 onclick='caso_estudio_100()'>Presentación</label> <span>|</span></li>
-            <li><label id="enlace_introduccion"
+            <li><label id="enlace_introduccion" class="enlace_caso_estudio"
                 onclick='document.getElementById("subtittle_cestudio").innerHTML
                 = "Introducción"'>Introducción</label><span>|</span></li>
           </ul>
