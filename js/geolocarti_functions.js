@@ -1,5 +1,5 @@
 function mainpageMaker() {
-	httpGetAsync("https://ramosvacca.github.io/GeolocartiVIS/pages/0_0.txt",
+	httpGetAsync("https://ramosvacca.github.io/GeolocartiVIS/0_0.txt",
 		setContentREQUEST,"mytruebody");
 
 	if (arguments[0] == true) {
@@ -16,7 +16,7 @@ function mainpageMaker() {
 function caso_estudio_link() {
 
 	classChanger("index_link", "caso_estudio_link", "active", true);
-	httpGetAsync("https://ramosvacca.github.io/GeolocartiVIS/pages/0_100_.txt",
+	httpGetAsync("https://ramosvacca.github.io/GeolocartiVIS/0_100_.txt",
 		setContentREQUEST,"mytruebody");
 	try{
 		window.history.pushState("object or string", "Title", "/GeolocartiVIS/caso_estudio.html");
@@ -28,7 +28,7 @@ function caso_estudio_link() {
 function caso_estudio_100() {
 
 	classChanger("enlace_presentacion", "enlace_presentacion", "active_work_link", true);
-	httpGetAsync("https://ramosvacca.github.io/GeolocartiVIS/pages/0_100_100.html",
+	httpGetAsync("https://ramosvacca.github.io/GeolocartiVIS/0_100_100.html",
 		setContentREQUEST,"caso_estudio_content");
 
 
