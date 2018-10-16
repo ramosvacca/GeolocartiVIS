@@ -19,7 +19,7 @@ function mainpageMaker() {
 function caso_estudio_link() {
 
 	classChanger("index_link", "caso_estudio_link", "active", true);
-	httpGetAsync("https://ramosvacca.github.io/GeolocartiVIS/0_100_.html",
+	httpGetAsync("http://geolocarti.net/0_100_.html",
 		setContentREQUEST,"mytruebody");
 
 	try{
@@ -32,7 +32,7 @@ function caso_estudio_link() {
 function caso_estudio_(page, htmlFile) {
 
 	classChanger(active_caso_estudio_link, `enlace_${page}`, "active_work_link", true);
-	httpGetAsync(`https://ramosvacca.github.io/GeolocartiVIS/${htmlFile}.html`,
+	httpGetAsync(`http://geolocarti.net/${htmlFile}.html`,
 		setContentREQUEST,"caso_estudio_content");
 	try{
 		window.history.pushState("object or string", "Title", `/GeolocartiVIS/caso_estudio/${page}/`);
