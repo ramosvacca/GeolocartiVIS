@@ -13,13 +13,28 @@ function mainpageMaker() {
 		setContentREQUEST,"mytruebody");
 
 	if (arguments[0] == true) {
-		classChanger("caso_estudio_link", "index_link", "active", true);
+		
+		const mainpage_interval = setInterval(function () {
+
+        if (
+        	typeof document.getElementById("index_link") != null) { //It returns a list of affiliations ids
+        	classChanger("caso_estudio_link", "index_link", "active", true);
+        	clearInterval(mainpage_interval)
+
+    	} else {
+    		console.log('waiting')
+    	}
+        }, 20);
+
+		
 		try{
 		window.history.pushState("object or string", "Title", "/");
 		} 
 		catch(err) {
 		console.log('DESARROLLO LOCAL')
 		}
+	} else {
+		classChanger("caso_estudio_link", "index_link", "active", true);
 	}
 }
 
