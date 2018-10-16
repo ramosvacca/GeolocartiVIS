@@ -87,7 +87,7 @@ function httpGetAsync(theUrl, callback, additional){
 
             }
     }
-    xmlHttp.addHeader("Access-Control-Allow-Origin", "http://geolocarti.net/");
+    
     xmlHttp.open("GET", theUrl, true); // true for asynchronous
     xmlHttp.send(null);
 
