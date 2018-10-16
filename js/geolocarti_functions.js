@@ -28,7 +28,7 @@ function caso_estudio_link() {
 function caso_estudio_100() {
 
 	classChanger("enlace_presentacion", "enlace_presentacion", "active_work_link", true);
-	httpGetAsync("https://ramosvacca.github.io/GeolocartiVIS/pages/0_100_100.txt",
+	httpGetAsync("https://ramosvacca.github.io/GeolocartiVIS/pages/0_100_100.html",
 		setContentREQUEST,"caso_estudio_content");
 
 
