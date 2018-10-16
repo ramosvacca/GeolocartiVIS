@@ -1,56 +1,61 @@
 <div class="container">
-	<h3 class="tittle-w3ls">Producción científica para la Escuela de
-		Ingeniería de Sistemas, Universidad del Valle, Cali, Valle del
-		Cauca, Colombia.
-	</h3>
-	<div class="inner_sec_info_wthree_agile">
-		<div class="help_full">
-			<div class="col-md-6 banner_bottom_grid help">
-				<img src="/images/redes/colCluster.png" alt="Cluster de
-					Colombia" class="img-responsive" onmouseover="this.src='/images/redes/colClusterHOVER.png';this.width='700';this.height='697'" onmouseout="this.src='/images/redes/colCluster.png';this.width='700';this.height='697'" id="prefacio_casoestudio" height="697" width="700"><br>
-				<figcaption>Imagen 2 y 3. Mapa de densidad vs Clusters
-					encontrados
-				</figcaption>
-			</div>
-			<div class="col-md-6 banner_bottom_left">
-				<h4 id="subtittle_cestudio"> Relaciones espaciales, Clusters y Patrones Geográficos </h4>
-				<p align="justify">El presente proyecto tiene como
-				propósito entregar un modelo de trabajo para el análisis
-				de información semánticamente enriquecida con
-				datos geográficos, buscando relaciones espaciales
-				entre diferentes regiones donde se ubican los actores, e identificando
-				clusters geográficos y su evolución
-				en el tiempo. <br>
-				</p>
+<h3 class="tittle-w3ls">Producción científica para la Escuela de
+Ingeniería de Sistemas, Universidad del Valle, Cali, Valle del
+Cauca, Colombia.
+</h3>
+<div class="inner_sec_info_wthree_agile">
+<div class="help_full">
+<div class="col-md-6 banner_bottom_grid help">
+<img src="/images/redes/colCluster.png" alt="Cluster de
+Colombia" class="img-responsive" onmouseover="this.src='/images/redes/colClusterHOVER.png';this.width='700';this.height='697'" onmouseout="this.src='/images/redes/colCluster.png';this.width='700';this.height='697'" id="prefacio_casoestudio" height="697" width="700"><br>
+<figcaption>Imagen 2 y 3. Mapa de densidad vs Clusters
+encontrados </figcaption>
 
-				<p align="justify">Nuestro repositorio principal es SCOPUS, lo usamos para
-				extraer la información relacionada con los artículos
-				científicos, sus autores y las afiliaciones a las que pertenecen. Nuestro <i>triplestore</i>
-				es AllegroGraph de Franz Inc., donde guardamos la información en una
-				base de datos NoSQL y realizamos la indexación geográfica. Con la API de
-				Google hacemos la geocodificación, y extraemos las divisiones
-				administrativas nivel 1, nivel 2, el país y el código del país; también
-				dibujamos los resultados al ir procesando nuestra información.</p>
-				<p align="justify">Nuestra implementación se encarga del resto.
-				Partiendo de unos identificadores que se refieren a metadatos de
-				artículos en RDF en SCOPUS, nos encargamos de revisar la vigencia de los
-				recursos de artículos y afiliaciones, descargarlos, introducirlos a
-				nuestra tienda de tripletas, extraer los autores y afiliaciones;
-				recuperar los recursos de las afiliaciones, geocodificar las
-				afiliaciones, realizar el etiquetado geográfico para las areas
-				administrativas, extraer las relaciones con pesos para coautoría,
-				citaciones, y referencias con algunos filtros (por regiones, coordenadas
-				geográficas, año de publicación, y por afiliación), identificación de
-				relaciones espaciales (intra locales, inter locales, supra locales y
-				extra locales; dentro de la misma ciudad, con otras ciudades en la misma
-				región, otras regiones en el mismo país, y por fuera del país,
-				respectivamente), e identificación de clusters con el algoritmo <a href="http://geolocarti.net/articles/dbscan.pdf">DBSCAN</a>.</p>
-				<p align="justify">La apuesta de una pieza de software <u>automática</u> <br>
-				</p>
+<img src="images/general/diagrama_geolocarti.png" alt="Cluster de
+Colombia" class="img-responsive" onmouseover="this.src='/images/redes/colClusterHOVER.png';this.width='700';this.height='697'" onmouseout="this.src='/images/redes/colCluster.png';this.width='700';this.height='697'" id="prefacio_casoestudio" height="697" width="700"><br>
+<figcaption>Imagen 2 y 3. Mapa de densidad vs Clusters
+encontrados </figcaption>
 
-				<div class="ab_button"> <a class="btn btn-primary btn-lg
-				hvr-underline-from-left" href="single.html" role="button">Read More </a>
-				</div>
+</div>
+<div class="col-md-6 banner_bottom_left">
+<h4 id="subtittle_cestudio"> Relaciones espaciales, Clusters y Patrones Geográficos </h4>
+<p align="justify">El presente proyecto tiene como
+propósito entregar un modelo de trabajo para el análisis
+de información semánticamente enriquecida con
+datos geográficos, buscando relaciones espaciales
+entre diferentes regiones donde se ubican los actores, e identificando
+clusters geográficos y su evolución
+en el tiempo. <br>
+</p>
+
+<p align="justify">Nuestro repositorio principal es SCOPUS, lo usamos para
+extraer la información relacionada con los artículos
+científicos, sus autores y las afiliaciones a las que pertenecen. Nuestro <i>triplestore</i>
+es AllegroGraph de Franz Inc., donde guardamos la información en una
+base de datos NoSQL y realizamos la indexación geográfica. Con la API de
+Google hacemos la geocodificación, y extraemos las divisiones
+administrativas nivel 1, nivel 2, el país y el código del país; también
+dibujamos los resultados al ir procesando nuestra información.</p>
+<p align="justify">Nuestra implementación se encarga del resto.
+Partiendo de unos identificadores que se refieren a metadatos de
+artículos en RDF en SCOPUS, nos encargamos de revisar la vigencia de los
+recursos de artículos y afiliaciones, descargarlos, introducirlos a
+nuestra tienda de tripletas, extraer los autores y afiliaciones;
+recuperar los recursos de las afiliaciones, geocodificar las
+afiliaciones, realizar el etiquetado geográfico para las areas
+administrativas, extraer las relaciones con pesos para coautoría,
+citaciones, y referencias con algunos filtros (por regiones, coordenadas
+geográficas, año de publicación, y por afiliación), identificación de
+relaciones espaciales (intra locales, inter locales, supra locales y
+extra locales; dentro de la misma ciudad, con otras ciudades en la misma
+región, otras regiones en el mismo país, y por fuera del país,
+respectivamente), e identificación de clusters con el algoritmo <a href="http://geolocarti.net/articles/dbscan.pdf">DBSCAN</a>.</p>
+<p align="justify">La apuesta de una pieza de software <u>automática</u> <br>
+</p>
+
+<div class="ab_button"> <a class="btn btn-primary btn-lg
+hvr-underline-from-left" href="single.html" role="button">Read More </a>
+</div>
 				<br>
 				<br>
 				<br>
