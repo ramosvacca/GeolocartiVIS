@@ -2,7 +2,7 @@ active_caso_estudio_link = ''
 
 
 function mainpageMaker() {
-	httpGetAsync("https://ramosvacca.github.io/GeolocartiVIS/0_0.html",
+	httpGetAsync("http://geolocarti.net/0_0.html",
 		setContentREQUEST,"mytruebody");
 
 	if (arguments[0] == true) {
@@ -87,7 +87,7 @@ function httpGetAsync(theUrl, callback, additional){
 
             }
     }
-    
+
     xmlHttp.open("GET", theUrl, true); // true for asynchronous
     xmlHttp.send(null);
 
