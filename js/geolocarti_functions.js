@@ -1,5 +1,12 @@
 active_caso_estudio_link = ''
+function footheadMaker(){
+	httpGetAsync("http://geolocarti.net/0_home.html",
+		setContentREQUEST,"home");
 
+	httpGetAsync("http://geolocarti.net/0_footercontent.html",
+		setContentREQUEST,"footercontent");
+
+}
 
 function mainpageMaker() {
 	httpGetAsync("http://geolocarti.net/0_0.html",
