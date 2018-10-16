@@ -3,11 +3,9 @@
         <div class="services-breadcrumb">
           <div class="inner_breadcrumb">
           <ul class="short">
-            <li><label
-                onclick='document.getElementById("subtittle_cestudio").innerHTML
-                = `Reconocimiento automático de relaciones espaciales y
-                patrones geográficos.`'>Presentación</label> <span>|</span></li>
-            <li><label
+            <li><label id="enlace_presentacion"
+                onclick='caso_estudio_100()'>Presentación</label> <span>|</span></li>
+            <li><label id="enlace_introduccion"
                 onclick='document.getElementById("subtittle_cestudio").innerHTML
                 = "Introducción"'>Introducción</label><span>|</span></li>
           </ul>

@@ -1,6 +1,20 @@
- function caso_estudio_link() {
+function mainpageMaker() {
+	httpGetAsync("https://ramosvacca.github.io/GeolocartiVIS/pages/0_0.txt",
+		setContentREQUEST,"mytruebody");
 
-	
+	if (arguments[0] == true) {
+		classChanger("caso_estudio_link", "index_link", "active", true);
+		try{
+		window.history.pushState("object or string", "Title", "/GeolocartiVIS/index.html");
+		} 
+		catch(err) {
+		console.log('DESARROLLO LOCAL')
+		}
+	}
+}
+
+function caso_estudio_link() {
+
 	classChanger("index_link", "caso_estudio_link", "active", true);
 	httpGetAsync("https://ramosvacca.github.io/GeolocartiVIS/pages/0_100_.txt",
 		setContentREQUEST,"mytruebody");
@@ -11,21 +25,14 @@
 	}
 };
 
-function mainpageMaker() {
-	httpGetAsync("https://ramosvacca.github.io/GeolocartiVIS/pages/0_0.txt",
-		setContentREQUEST,"mytruebody");
+function caso_estudio_100() {
 
-	if (arguments[0] == true) {
-		classChanger("caso_estudio_link", "index_link", "active", true);
-		try{
-		window.history.pushState("object or string", "Title", "/GeolocartiVIS/index.html");
-		} catch(err) {
-		console.log('DESARROLLO LOCAL')
-		}
-	}
+	classChanger("enlace_presentacion", "enlace_presentacion", "active_work_link", true);
+	httpGetAsync("https://ramosvacca.github.io/GeolocartiVIS/pages/0_100_100.txt",
+		setContentREQUEST,"caso_estudio_content");
 
 
-}
+};
 
 
 function httpGetAsync(theUrl, callback, additional){
