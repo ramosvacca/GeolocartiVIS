@@ -40,6 +40,21 @@ function caso_estudio_100() {
 
 };
 
+function caso_estudio_101() {
+
+	classChanger("enlace_presentacion", "enlace_introduccion", "active_work_link", true);
+	httpGetAsync("https://ramosvacca.github.io/GeolocartiVIS/0_100_101.html",
+		setContentREQUEST,"caso_estudio_content");
+	try{
+		window.history.pushState("object or string", "Title", "/GeolocartiVIS/caso_estudio/introduccion/");
+		} 
+		catch(err) {
+		console.log('DESARROLLO LOCAL')
+		}
+
+
+};
+
 
 function httpGetAsync(theUrl, callback, additional){
 
