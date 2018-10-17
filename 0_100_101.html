@@ -70,12 +70,12 @@ hvr-underline-from-left" href="single.html" role="button">Read More </a>
 <script>
         window.onscroll = function() {caso_estudio_nav_FIXER()};
 
-          
-
-          function caso_estudio_nav_FIXER() {
             var mainheader = document.getElementById("headnav");
             var header = document.getElementById("caso_estudio_nav");
             var sticky = header.offsetTop + 25;
+
+          function caso_estudio_nav_FIXER() {
+          
             if (window.pageYOffset > sticky) {
               header.classList.add("navbar-fixed-top");
               mainheader.classList.remove("navbar-fixed-top");
