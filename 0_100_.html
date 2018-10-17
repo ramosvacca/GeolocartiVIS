@@ -1,6 +1,6 @@
         <div class="banner_inner_con"> </div>
 
-        <div class="services-breadcrumb">
+        <div class="services-breadcrumb" id="caso_estudio_nav">
           <div class="inner_breadcrumb">
           <ul class="short">
             <li><label id="enlace_presentacion" class="enlace_caso_estudio"
@@ -26,7 +26,23 @@
 
         
         <!--/caso_estudio_content-->
+        <script>
+        window.onscroll = function() {myFunction()};
 
+          var mainheader = document.getElementById("headnav");
+          var header = document.getElementById("caso_estudio_nav");
+          var sticky = header.offsetTop + 25;
+
+          function myFunction() {
+            if (window.pageYOffset > sticky) {
+              header.classList.add("navbar-fixed-top");
+              mainheader.classList.remove("navbar-fixed-top");
+            } else {
+              header.classList.remove("navbar-fixed-top");
+              mainheader.classList.add("navbar-fixed-top");
+            }
+        }
+        </script>
 
         <div class="news-main" style="margin-bottom: 170px;">
             <div class="col-md-4 banner_bottom_left">
