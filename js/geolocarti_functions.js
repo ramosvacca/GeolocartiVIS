@@ -1,15 +1,15 @@
 active_caso_estudio_link = ''
 function footheadMaker(){
-	httpGetAsync("http://geolocarti.net/0_home.html",
+	httpGetAsync("https://geolocarti.net/0_home.html",
 		setContentREQUEST,"home");
 
-	httpGetAsync("http://geolocarti.net/0_footercontent.html",
+	httpGetAsync("https://geolocarti.net/0_footercontent.html",
 		setContentREQUEST,"footercontent");
 
 }
 
 function mainpageMaker() {
-	httpGetAsync("http://geolocarti.net/0_0.html",
+	httpGetAsync("https://geolocarti.net/0_0.html",
 		setContentREQUEST,"mytruebody");
 
 	if (arguments[0] == true) {
@@ -41,7 +41,7 @@ function mainpageMaker() {
 function caso_estudio_link() {
 
 	classChanger("index_link", "caso_estudio_link", "active", true);
-	httpGetAsync("http://geolocarti.net/0_100_.html",
+	httpGetAsync("https://geolocarti.net/0_100_.html",
 		setContentREQUEST,"mytruebody");
 
 	try{
@@ -54,7 +54,7 @@ function caso_estudio_link() {
 function caso_estudio_(page, htmlFile) {
 
 	classChanger(active_caso_estudio_link, `enlace_${page}`, "active_work_link", true);
-	httpGetAsync(`http://geolocarti.net/${htmlFile}.html`,
+	httpGetAsync(`https://geolocarti.net/${htmlFile}.html`,
 		setContentREQUEST,"caso_estudio_content");
 	try{
 		window.history.pushState("object or string", "Title", `/caso_estudio/${page}/`);
