@@ -1,4 +1,4 @@
-<div class="container">
+        <div class="container">
 <h3 class="tittle-w3ls">Producción científica para la Escuela de
 Ingeniería de Sistemas, Universidad del Valle, Cali, Valle del
 Cauca, Colombia.
@@ -66,3 +66,22 @@ hvr-underline-from-left" href="single.html" role="button">Read More </a>
 		</div>
 	</div>
 </div>
+
+<script>
+        window.onscroll = function() {caso_estudio_nav_FIXER()};
+
+          
+
+          function caso_estudio_nav_FIXER() {
+            var mainheader = document.getElementById("headnav");
+            var header = document.getElementById("caso_estudio_nav");
+            var sticky = header.offsetTop + 25;
+            if (window.pageYOffset > sticky) {
+              header.classList.add("navbar-fixed-top");
+              mainheader.classList.remove("navbar-fixed-top");
+            } else {
+              header.classList.remove("navbar-fixed-top");
+              mainheader.classList.add("navbar-fixed-top");
+            }
+        }
+        </script>
